@@ -20,6 +20,10 @@
 if (!defined('ABSPATH')) {
     exit;
 }
+
+// Include post types
+require_once plugin_dir_path(__FILE__) . 'includes/post-types/purchase-order.php';
+
 // Register custom roles on plugin activation
 register_activation_hook(__FILE__, 'pms_create_roles');
 
